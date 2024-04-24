@@ -15,9 +15,14 @@ const Formulario = () => {
         'Inovação e Gestão'
     ]
 
+
+    const AoSalvar = (evento) => { /*função que será chamada quando o formulário for submetido*/ 
+        evento.preventDefault() /*previne que a página atualize*/
+    }
+
     return (
         <section className='formulario'>
-            <form>
+            <form onSubmit={AoSalvar}>
                 <h2>Preencha os dados para criar o card do colaborador</h2>
                 <CampoTexto label='Nome' placeholder='Digite seu nome' />
                 <CampoTexto label='Cargo' placeholder='Digite seu cargo' />
