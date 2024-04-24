@@ -18,6 +18,7 @@ const Formulario = () => {
 
     const AoSalvar = (evento) => { /*função que será chamada quando o formulário for submetido*/ 
         evento.preventDefault() /*previne que a página atualize*/
+        console.log("o formulário fio submetido!")
     }
 
     return (
